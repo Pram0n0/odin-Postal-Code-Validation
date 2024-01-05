@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Postal Code Validation</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <form>
+    <label for="ZIP">ZIP: </label>
+    <input type="text" id="ZIP" maxlength="5" minlength="5" required/>
+    <label for="Country">Country: </label>
+    <input type="text" id="Country" pattern="[a-zA-Z]{2,}" required>
+    <label for="Password">Password: </label>
+    <input type="password" name="password" id="Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,10}$" required>
+    <label for="Confirm_Password">Confirm Password: </label>
+    <input type="password" name="confirm_password" id="Confirm_Password" required>
+    <button type="submit">Validate</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,18 @@
+input:focus {
+    border: none;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
+    outline: none;
+}
+
+input:valid {
+    border: rgb(0, 183, 255) 2px solid;
+}
+
+input.error {
+    font-size: .9rem;
+    border-color: rgb(255, 69, 100);
+}
+
+input.error.match {
+    border-color: rgb(0, 183, 255)
+}
